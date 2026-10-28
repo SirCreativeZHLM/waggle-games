@@ -1,0 +1,7 @@
+.DS_Store
+.godot/
+build/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+ios/WaggleRemote.xcodeproj/project.xcworkspace/xcuserdata/

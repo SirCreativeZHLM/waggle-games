@@ -1,0 +1,29 @@
+name: WaggleRemote
+options:
+  bundleIdPrefix: dev.waggle
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  WaggleRemote:
+    type: application
+    platform: iOS
+    sources: [WaggleRemote]
+    info:
+      path: WaggleRemote/Info.plist
+      properties:
+        CFBundleDisplayName: Waggle Remote
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        NSMotionUsageDescription: Waggle Remote streams your phone's motion to your computer so you can play with it as a controller.
+        NSLocalNetworkUsageDescription: Waggle Remote finds and talks to Waggle Games running on your local network.
+        UIApplicationSupportsIndirectInputEvents: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.waggle.remote
+        GENERATE_INFOPLIST_FILE: NO
